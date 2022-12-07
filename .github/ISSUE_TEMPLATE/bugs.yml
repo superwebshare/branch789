@@ -50,7 +50,8 @@ body:
       options:
         - label: "Classic Editor"
         - label: "Gutenberg"
-        - label: "Classic Editor plugin"  - type: checkboxes
+        - label: "Classic Editor plugin"
+  - type: checkboxes
     id: browser_info
     validations:
       required: true
