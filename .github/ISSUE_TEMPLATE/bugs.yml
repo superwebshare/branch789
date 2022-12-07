@@ -18,7 +18,6 @@ body:
           required: true
         - label: "I've searched for any related issues and avoided creating a duplicate issue."
           required: true
-
   - type: textarea
     id: description
     validations:
