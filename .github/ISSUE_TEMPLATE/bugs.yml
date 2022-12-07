@@ -1,5 +1,5 @@
-name: "Bug Report"
-description: "Report a bug"
+name: "🐞 Bug Report"
+description: "Report a bug if something isn't working as expected in Elementor"
 labels: ["status/awaiting_triage"]
 body:
   - type: markdown
@@ -7,9 +7,17 @@ body:
       value: |
         ## BEFORE POSTING YOUR ISSUE
 
-        - Please create GitHub issues only for Yoast bugs. GitHub issues ARE NOT FOR SUPPORT.
+        - Please create GitHub issues only for Elementor bugs. GitHub issues ARE NOT FOR SUPPORT.
 
-        - Make sure you are using the most updated versions of Yoast, WordPress & your theme.
+        - To avoide duplicates, please search this repository for the issue.
+
+        - If the issue can't be recreated on other sites, it's not an Elementor bug. In that case use the support links above.
+
+        - Make sure you are using the most updated versions of Elementor, WordPress & your theme.
+
+        - Deactivate all of your plugins. If this solves the problem, gradually activate your plugins one by one, until you spot the problematic plugin.
+
+        - Change your WordPress theme to [Hello theme](https://wordpress.org/themes/hello-elementor/).
 
         ## THE ISSUE
   - type: checkboxes
