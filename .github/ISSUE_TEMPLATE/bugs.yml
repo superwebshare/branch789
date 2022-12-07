@@ -60,14 +60,17 @@ body:
         - label: "Safari"
         - label: "Edge"
         - label: "Other"
-  - type: markdown
-    attributes:
-      value: |
-        ## Used versions
   - type: input
   id: wordpress_version
   attributes:
       label: "WordPress version"
       description: "Type the version of WordPress"
+  validations:
+    required: true
+- type: input
+  id: yoast_seo_version
+  attributes:
+    label: "Yoast SEO version"
+    description: "Type the version of Yoast SEO"
   validations:
     required: true
