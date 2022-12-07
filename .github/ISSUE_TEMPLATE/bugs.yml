@@ -39,7 +39,7 @@ body:
     attributes:
       label: "How can we reproduce this behavior?"
       description: "List all the steps needed to reproduce the issue, so we can replicate it quickly"
-      placeholder:  |
+      placeholder: |
       1. Go to '...'
       2. Click on '....'
       3. Scroll down to '....'
