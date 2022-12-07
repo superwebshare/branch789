@@ -44,14 +44,18 @@ body:
         2. Click on '....'
         3. Scroll down to '....'
         4. See error
-  - type: checkboxes
+  - type: dropdown
     id: affected-editor
     attributes:
-      label: "If relevant, which editor is affected (or editors): "
+      label: "Affected Editors"
+      description: If relevant, which editor is affected (or editors)
+      multiple: true
       options:
-        - label: "Classic Editor"
-        - label: "Gutenberg"
-        - label: "Classic Editor plugin"
+        - Classic Editor
+        - Gutenberg
+        - Classic Editor plugin
+    validations:
+      required: false
   - type: checkboxes
     id: browser_info
     validations:
