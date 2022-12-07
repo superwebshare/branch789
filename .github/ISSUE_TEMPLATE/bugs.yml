@@ -48,3 +48,19 @@ body:
         - label: "Classic Editor"
         - label: "Gutenberg"
         - label: "Classic Editor plugin"
+  - type: checkboxes
+    id: browser_info
+    validations:
+      required: true
+    attributes:      
+      label: "If relevant, which editor is affected (or editors): "
+      options:
+        - label: "Chrome"
+        - label: "Firefox"
+        - label: "Safari"
+        - label: "Edge"
+        - label: "Other"
+  - type: markdown
+    attributes:
+      value: |
+        ## Used versions
