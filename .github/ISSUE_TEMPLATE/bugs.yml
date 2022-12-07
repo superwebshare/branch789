@@ -59,4 +59,11 @@ body:
         - label: "Firefox"
         - label: "Safari"
         - label: "Edge"
-        - label: "Other"
+        - label: Other
+- type: input
+  id: yoast_seo_version
+  attributes:
+    label: "Yoast SEO version"
+    description: "Type the version of Yoast SEO"
+  validations:
+    required: true
