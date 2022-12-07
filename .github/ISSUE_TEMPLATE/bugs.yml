@@ -40,10 +40,10 @@ body:
       label: "How can we reproduce this behavior?"
       description: "List all the steps needed to reproduce the issue, so we can replicate it quickly"
       placeholder: |
-      1. Go to '...'
-      2. Click on '....'
-      3. Scroll down to '....'
-      4. See error
+        ## BEFORE POSTING YOUR ISSUE
+        - Please create GitHub issues only for Yoast bugs. GitHub issues ARE NOT FOR SUPPORT.
+        - Make sure you are using the most updated versions of Yoast, WordPress & your theme.
+        ## THE ISSUE
   - type: checkboxes
     id: affected-editor
     attributes:
