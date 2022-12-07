@@ -18,3 +18,64 @@ body:
           required: true
         - label: "I've searched for any related issues and avoided creating a duplicate issue."
           required: true
+
+  - type: textarea
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: "Description"
+      description: "Please give us a description of what happened."
+  - type: textarea
+    id: what-happen
+    validations:
+      required: true
+    attributes:
+      label: "Expected"
+      description: "Please describe what you expected to happen and why."
+  - type: textarea
+    id: steps_to_reproduce
+    validations:
+      required: true
+    attributes:
+      label: "How can we reproduce this behavior?"
+      description: "List all the steps needed to reproduce the issue, so we can replicate it quickly"
+      placeholder: "1) ... 2) ... 3) ..."
+  - type: checkboxes
+    id: affected-editor
+    attributes:
+      label: "If relevant, which editor is affected (or editors): "
+      options:
+        - label: "Classic Editor"
+        - label: "Gutenberg"
+        - label: "Classic Editor plugin"
+  - type: checkboxes
+    id: browser_info
+    validations:
+      required: true
+    attributes:      
+      label: "If relevant, which editor is affected (or editors): "
+      options:
+        - label: "Chrome"
+        - label: "Firefox"
+        - label: "Safari"
+        - label: "Edge"
+        - label: "Other"
+  - type: markdown
+    attributes:
+      value: |
+        ## Used versions
+  - type: input
+  id: wordpress_version
+  attributes:
+      label: "WordPress version"
+      description: "Type the version of WordPress"
+  validations:
+    required: true
+- type: input
+  id: yoast_seo_version
+  attributes:
+    label: "Yoast SEO version"
+    description: "Type the version of Yoast SEO"
+  validations:
+    required: true
