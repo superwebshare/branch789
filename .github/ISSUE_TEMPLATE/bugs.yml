@@ -57,18 +57,21 @@ body:
         - Classic Editor plugin
     validations:
       required: false
-  - type: checkboxes
+  - type: dropdown
     id: browser_info
-    validations:
-      required: true
-    attributes:      
-      label: "If relevant, which editor is affected (or editors): "
+    attributes:
+      label: "Browser"
+      description: If relevant, which editor is affected (or editors)
+      multiple: true
       options:
-        - label: "Chrome"
-        - label: "Firefox"
-        - label: "Safari"
-        - label: "Edge"
-        - label: "Other"
+        - Chrome
+        - Mozilla
+        - Edge
+        - Brave
+        - Safari
+        - Other
+    validations:
+      required: false
   - type: input
     id: yoast_seo_version
     attributes:
