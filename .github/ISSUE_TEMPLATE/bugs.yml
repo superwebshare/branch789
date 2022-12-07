@@ -60,11 +60,11 @@ body:
         - label: "Safari"
         - label: "Edge"
         - label: "Other"
-  - type: checkboxes
-    id: affected1-editor
+  - type: input
+    id: prevalence
     attributes:
-      label: "If relevant, which editor is affected (or editors): "
-      options:
-        - label: "Classic Editor"
-        - label: "Gutenberg"
-        - label: "Classic Editor plugin"
+      label: Bug prevalence
+      description: "How often do you or others encounter this bug?"
+      placeholder: "Whenever I visit the user account page (1-2 times a week)"
+    validations:
+      required: true
