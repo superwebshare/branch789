@@ -1,24 +1,13 @@
-name: "🐞 Bug Report"
-description: "Report a bug if something isn't working as expected in Elementor"
+name: "Bug Report"
+description: "Report a bug"
 labels: ["status/awaiting_triage"]
 body:
   - type: markdown
     attributes:
       value: |
         ## BEFORE POSTING YOUR ISSUE
-
-        - Please create GitHub issues only for Elementor bugs. GitHub issues ARE NOT FOR SUPPORT.
-
-        - To avoide duplicates, please search this repository for the issue.
-
-        - If the issue can't be recreated on other sites, it's not an Elementor bug. In that case use the support links above.
-
-        - Make sure you are using the most updated versions of Elementor, WordPress & your theme.
-
-        - Deactivate all of your plugins. If this solves the problem, gradually activate your plugins one by one, until you spot the problematic plugin.
-
-        - Change your WordPress theme to [Hello theme](https://wordpress.org/themes/hello-elementor/).
-
+        - Please create GitHub issues only for Yoast bugs. GitHub issues ARE NOT FOR SUPPORT.
+        - Make sure you are using the most updated versions of Yoast, WordPress & your theme.
         ## THE ISSUE
   - type: checkboxes
     id: prerequisites
@@ -29,64 +18,3 @@ body:
           required: true
         - label: "I've searched for any related issues and avoided creating a duplicate issue."
           required: true
-  - type: textarea
-    id: description
-    validations:
-      required: true
-    attributes:
-      label: "Description"
-      description: "Please give us a description of what happened."
-  - type: textarea
-    id: what-happen
-    validations:
-      required: true
-    attributes:
-      label: "Expected"
-      description: "Please describe what you expected to happen and why."
-  - type: textarea
-    id: steps_to_reproduce
-    validations:
-      required: true
-    attributes:
-      label: "How can we reproduce this behavior?"
-      description: "List all the steps needed to reproduce the issue, so we can replicate it quickly"
-      placeholder: "1) ... 2) ... 3) ..."
-  - type: checkboxes
-    id: affected-editor
-    attributes:
-      label: "If relevant, which editor is affected (or editors): "
-      options:
-        - label: "Classic Editor"
-        - label: "Gutenberg"
-        - label: "Classic Editor plugin"
-  - type: checkboxes
-    id: browser_info
-    validations:
-      required: true
-    attributes:      
-      label: "If relevant, which editor is affected (or editors): "
-      options:
-        - label: "Chrome"
-        - label: "Firefox"
-        - label: "Safari"
-        - label: "Edge"
-        - label: "Other"
-        
-  - type: markdown
-    attributes:
-      value: |
-        ## Used versions
-  - type: input
-  id: wordpress_version
-  attributes:
-      label: "WordPress version"
-      description: "Type the version of WordPress"
-  validations:
-    required: true
-- type: input
-  id: yoast_seo_version
-  attributes:
-    label: "Yoast SEO version"
-    description: "Type the version of Yoast SEO"
-  validations:
-    required: true
