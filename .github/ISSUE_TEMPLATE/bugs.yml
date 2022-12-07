@@ -61,7 +61,7 @@ body:
         - label: "Edge"
         - label: "Other"
   - type: checkboxes
-    id: affected-editor
+    id: affected1-editor
     attributes:
       label: "If relevant, which editor is affected (or editors): "
       options:
