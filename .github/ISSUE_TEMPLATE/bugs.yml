@@ -38,7 +38,7 @@ body:
       required: true
     attributes:
       label: "How can we reproduce this behavior?"
-      description: "List all the steps needed to reproduce the issue, so we can replicate it quickly"
+      description: "List all the steps needed to reproduce the issue, so we can replicate it quickly. You can attach screenshot(s) or recording(s) directly by dragging & dropping."
       placeholder: |
         1. Go to '...'
         2. Click on '....'
